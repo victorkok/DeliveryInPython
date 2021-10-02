@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    {% extends "base.html" %}
+
+    {% block title %}base{% endblock %}
+
+    {% block head %}
+    {{ super() }}
+    <link rel="icon" href="{{ url_for('images', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('css', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('css', filename='fonts.css') }}">
+    <link rel="stylesheet" href="{{ url_for('css', filename='bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500">
+    {% endblock %}
+</html>
